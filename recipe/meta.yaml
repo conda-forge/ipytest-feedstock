@@ -1,43 +1,45 @@
 {% set name = "ipytest" %}
-{% set version = "0.5.0" %}
-{% set arch = "py2.py3" %}
-{% set fn = "{}-{}-{}-none-any.whl".format(name, version, arch) %}
+{% set version = "0.8.1" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/{{ arch }}/{{ name[0] }}/{{ name }}/{{ fn }}
-  sha256: c25e09654b2b431047ab7f381333188be2e8fc66146f1f2aed44dc105128b074
-  
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8e42fafbad433c418731dca833f0a165d581af0f376721ba7c0107b782d919e7
+
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install {{ fn }} --no-deps --ignore-installed -vv "
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python >=3
+  host:
     - pip
+    - python >=3.0
   run:
-    - python >=3
-    - ipython
-    - pytest
- 
+    - packaging
+    - python >=3.0
+
 test:
   imports:
     - ipytest
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/chmp/ipytest
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE.txt
-  summary: 'Unit tests in IPython notebooks. Supports pytest / unittest.'
+  home: https://pypi.org/project/ipytest/
+  summary: Unit tests in IPython notebooks.
   description: |
     Sometimes quick experiments in IPython grow large and you find yourself wanting unit tests. This module aims to make testing code in IPython notebooks easy. At its core, it offers a way to run pytest tests inside the notebook environment. It is also designed to make the transfer of the tests into proper python modules easy.
+  license: MIT
+  license_file: LICENSE.md
 
 extra:
   recipe-maintainers:
+    - xhochy
     - pmgrafe
