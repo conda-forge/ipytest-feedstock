@@ -1,13 +1,13 @@
 About ipytest
 =============
 
-Home: https://github.com/chmp/ipytest
+Home: https://pypi.org/project/ipytest/
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Unit tests in IPython notebooks. Supports pytest / unittest.
+Summary: Unit tests in IPython notebooks.
 
 Sometimes quick experiments in IPython grow large and you find yourself wanting unit tests. This module aims to make testing code in IPython notebooks easy. At its core, it offers a way to run pytest tests inside the notebook environment. It is also designed to make the transfer of the tests into proper python modules easy.
 
@@ -16,9 +16,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6601&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ipytest-feedstock?branchName=master">
@@ -70,7 +68,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -120,4 +118,5 @@ Feedstock Maintainers
 =====================
 
 * [@pmgrafe](https://github.com/pmgrafe/)
+* [@xhochy](https://github.com/xhochy/)
 
