@@ -5,7 +5,7 @@ Home: https://pypi.org/project/ipytest/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Unit tests in IPython notebooks.
 
