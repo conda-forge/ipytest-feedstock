@@ -21,6 +21,8 @@ requirements:
     - python >=3.0
   run:
     - packaging
+    - ipython
+    - pytest >=5.4
     - python >=3.0
 
 test:
