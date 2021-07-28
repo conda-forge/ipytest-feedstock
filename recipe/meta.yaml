@@ -1,5 +1,5 @@
 {% set name = "ipytest" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c7ffa7818628ee01ad27d3d33350870e5b60569feb486f925ff15303604c6be5
+  sha256: 6f1a03b32e243fd331439fcef587b34a72c74aa91e7fb7fa9e0799c83ccbe331
 
 build:
   number: 0
