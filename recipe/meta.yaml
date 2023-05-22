@@ -40,7 +40,7 @@ about:
   description: |
     Sometimes quick experiments in IPython grow large and you find yourself wanting unit tests. This module aims to make testing code in IPython notebooks easy. At its core, it offers a way to run pytest tests inside the notebook environment. It is also designed to make the transfer of the tests into proper python modules easy.
   license: MIT
-  license_file: LICENSE.md
+  license_file: License.md
 
 extra:
   recipe-maintainers:
